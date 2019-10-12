@@ -1,0 +1,102 @@
+page {
+  height: 100%;
+  width: 100%;
+}
+
+.nav_content {
+  height: 11%;
+  background-color: #000;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.nav_text {
+  display: block;
+  padding-top: 9%;
+  font: normal normal 38rpx "微软雅黑";
+  color: #fff;
+}
+
+.content {
+  /* 先设置一个初始值，后面再用js控制 */
+  height: 89%;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+}
+
+.bg_img {
+  height: 100%;
+  width: 100%;
+}
+
+.input_container {
+  /* border: 1px solid #000; */
+  width: 83%;
+  margin: 0 8.5%;
+  height: 750rpx;
+  position: absolute;
+  top: 220rpx;
+}
+.logo_content {
+  color: #fff;
+  margin-bottom: 140rpx;
+  font-size: 70rpx;
+  width: 100%;
+}
+.input_content {
+  margin: 65rpx 0;
+  position: relative;
+}
+
+.input_style {
+  width: 100%;
+  height: 95rpx;
+  opacity: 0.4;
+  background-color: #fff;
+  border-radius: 15rpx;
+}
+
+.input_icon {
+  top:13rpx;
+  left: 15rpx;
+  position: absolute;
+  width: 60rpx;
+  height: 60rpx;
+}
+.input_pwd_icon {
+  width: 58rpx;
+}
+.input_user {
+  color: #000;
+  position: relative;
+  width: 85%;
+  height: 75rpx;
+}
+
+.input_pwd {
+  color: #000;
+  position: relative;
+  width: 72%;
+  height: 75rpx;
+}
+.see_pwd {
+  top:30rpx;
+  right: 25rpx;
+  position: absolute;
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.forget_pwd {
+  margin: 20rpx 5rpx;
+  font-size: 28rpx;
+  color: #fff;
+  opacity: 0.8;
+}
+.btn_sigin {
+  height: 95rpx;
+  line-height: 95rpx;
+  opacity: 0.5;
+  color: rgb(59, 58, 58);
+}

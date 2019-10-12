@@ -1,0 +1,10 @@
+<!--pages/start/start.wxml-->
+<view class='start_container width_100'>
+  <image src='/images/start/start.jpg' class='bg_img' mode='widthFix'></image>
+  <view class='flex_row'>
+    <button class='btn_start' open-type='getUserInfo' bindgetuserinfo='getUserInfo'>立即体验</button>
+  </view>
+<!-- <view class='flex_row'>
+  <text class='welcome_logo'>wechat logo</text>
+</view> -->
+</view>

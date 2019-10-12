@@ -1,0 +1,36 @@
+<!-- page容器 -->
+<view class='height_100 width_100'>
+  <!-- 导航栏 -->
+  <view class='nav_content' style='height:{{nav_height_str}}'>
+    <text class='nav_text'>login</text>
+  </view>
+  <!-- body部分 -->
+  <view class='content' style='height:{{bg_height}}'>
+    <image src='http://i1.bvimg.com/667072/d7acec04e73374cf.jpg' mode='widthFix' class='bg_img'></image>
+    <!-- 中间内容容器 -->
+    <view class='input_container'>
+      <!-- logo部分 -->
+      <view class='logo_content flex_row'>
+        <text>Wechat logo</text>
+      </view>
+      <!-- 输入框内容 -->
+      <form bindsubmit='login_submit'>
+        <view class='input_content'>
+          <image class='input_icon' src='/images/login/username.png'></image>
+          <view class='flex_end input_style'>
+            <input class='input_user' maxlength='10' type='number' name='username' placeholder='UserName'></input>
+          </view>
+        </view>
+        <view class='input_content'>
+          <image class='input_icon input_pwd_icon' src='/images/login/pwdlock.png'></image>
+          <view class='flex_row input_style'>
+            <input class='input_pwd' type='Passowrd' password='true' name='pwd' placeholder='Passowrd'></input>
+          </view>
+          <image class='see_pwd' src='/images/login/eyeclose.png'></image>
+          <text class='forget_pwd flex_end'>FORGOT PASSWORD ?</text>
+        </view>
+        <button class='btn_sigin' form-type='submit'>Sign In</button>
+      </form>
+    </view>
+  </view>
+</view>

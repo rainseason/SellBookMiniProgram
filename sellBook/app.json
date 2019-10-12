@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/login/login",
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/puslish/publish",
+    "pages/shopcar/shopcar",
+    "pages/persional/persional",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/images/tabbar/start.png",
+        "selectedIconPath": "/images/tabbar/start_1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "iconPath": "/images/tabbar/classify.png",
+        "selectedIconPath": "/images/tabbar/classify_1.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/puslish/publish",
+        "iconPath": "/images/tabbar/publish.png",
+        "selectedIconPath": "/images/tabbar/publish_1.png",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/shopcar/shopcar",
+        "iconPath": "/images/tabbar/shopcar.png",
+        "selectedIconPath": "/images/tabbar/shopcar_1.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/persional/persional",
+        "iconPath": "/images/tabbar/persional.png",
+        "selectedIconPath": "/images/tabbar/persional_1.png",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

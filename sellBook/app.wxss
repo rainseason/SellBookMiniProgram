@@ -1,0 +1,44 @@
+/**app.wxss**/
+.flex_row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex_column{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flex_wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex_start{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex_end{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.flex_between{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.flex_around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.width_100{
+  width: 100%;
+}
+.height_100{
+  height: 100%;
+}

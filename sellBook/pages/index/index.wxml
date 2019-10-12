@@ -1,0 +1,42 @@
+<view class='nav_container'>
+  <image class='nav_img' src='http://i2.bvimg.com/667072/e250fc2910ec3546.jpg' mode='widthFix'></image>
+  <view class='nav'></view>
+  <view class='flex_row width_100 nav_bg'>
+    <text class='nav_text'>首页</text>
+  </view>
+  <!-- 搜索 -->
+  <view class='flex_row width_100'>
+    <view class='flex_row search_locate test_border'>
+      <text>广州</text>
+      <image class='search_locate_icon' src='/images/index/up_down.png'></image>
+    </view>
+    <view class='flex_row search_input_container test_border'>
+      <image class='search_icon' src='/images/index/search.png'></image>
+      <input class='search_input test_border' placeholder='请输入信息' placeholder-style='color:#666;font-size:16px;'></input>
+      <image class='search_cancle_icon' src='/images/index/cancle.png'></image>
+    </view>
+    <text class='search_cancle test_border'>取消</text>
+  </view>
+  <!-- 中心导航 -->
+  <view class='flex_row center_tab_container'>
+    <view class='flex_row center_tab'>
+      <view class='flex_column tab_item'>
+        <image class='tab_item_img' src='/images/index/world.png'></image>
+        <text>全部</text>
+      </view>
+      <view class='flex_column tab_item'>
+        <image class='tab_item_img' src='/images/index/hot.png'></image>
+        <text>热门</text>
+      </view>
+      <view class='flex_column tab_item'>
+        <image class='tab_item_img' src='/images/index/recomand.png'></image>
+        <text>推荐</text>
+      </view>
+      <view class='flex_column tab_item'>
+        <image class='tab_item_img' src='/images/index/new.png'></image>
+        <text>最新</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- <view>hhhh</view> -->

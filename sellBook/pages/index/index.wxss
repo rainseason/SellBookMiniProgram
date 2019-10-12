@@ -1,0 +1,98 @@
+/**index.wxss**/
+
+.nav_container {
+  position: relative;
+}
+
+.nav_img {
+  position: absolute;
+  width: 100%;
+}
+
+.nav {
+  background-color: #000;
+  opacity: 0.7;
+  height: 20px;
+}
+
+.nav_bg {
+  background-color: #000;
+  opacity: 0.6;
+  height: 48px;
+}
+
+.nav_text {
+  font: normal normal 21px "微软雅黑";
+  color: #fff;
+}
+
+/* 搜索 */
+
+.search_locate {
+  color: #fff;
+  opacity: 0.9;
+  font: normal normal 36rpx "微软雅黑";
+  width: 15%;
+}
+.search_locate_icon {
+  width: 38rpx;
+  height: 38rpx;
+}
+
+.search_input_container {
+  margin: 10rpx 1%;
+  width: 68%;
+  height: 55rpx;
+  line-height: 55rpx;
+  background-color: #fff;
+  opacity: 0.7;
+  border-radius: 7px;
+}
+.search_input{
+  width: 80%;
+}
+.search_icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.search_cancle_icon {
+ width: 40rpx;
+  height: 40rpx;
+}
+
+.search_cancle {
+  color: #fff;
+  font: normal normal 36rpx "微软雅黑";
+  opacity: 0.9;
+  width: 11%;
+}
+
+/* .test_border {
+  border: 1px solid red;
+} */
+/* 中心导航 */
+.center_tab_container {
+  margin-top: 250rpx;
+  width: 100%;
+}
+
+.center_tab {
+  /* 水平，垂直，水平模糊度，垂直模糊度，颜色，左上角inset */
+  box-shadow: 6rpx 6rpx 6rpx 6rpx rgb(126, 124, 124);
+  background-color:#fff;
+  opacity: 0.9;
+  height: 120rpx;
+  width: 75%; 
+  font: normal normal 30rpx "微软雅黑" ;
+  color: #9966FF;
+}
+.tab_item_img {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.tab_item {
+  width: 25%;
+}
+

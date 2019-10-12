@@ -1,0 +1,19 @@
+/* pages/start/start.wxss */
+.start_container{
+  position: relative;
+}
+.bg_img{
+  position: absolute;
+  width: 100%;
+}
+.welcome_logo{
+  color: #fff;
+  font: normal normal 60rpx "微软雅黑";
+  margin-top: 420rpx;
+}
+.btn_start{
+  color: #666;
+  width: 75%;
+  opacity: 0.8;
+  margin-top: 1120rpx;
+}

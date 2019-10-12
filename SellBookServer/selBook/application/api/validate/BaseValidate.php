@@ -2,7 +2,7 @@
 /**
  * Created by PhpStorm.
  * name: 基类验证器 继承tp5验证器
- * User: xgguo1
+ * UserInfo: xgguo1
  * Date: 2018/11/8
  * Time: 0:42
  */
@@ -27,7 +27,6 @@ class BaseValidate extends Validate
         $request = Request::instance();//实例化请求对象
         $params = $request->param();//获取全部请求参数
         $result = $this->batch()->check($params);//batch()批量验证
-
         if (!$result){//抛出参数错误异常
             $e = new ParameterException([
                 'msg'=>$this->error,
@@ -71,25 +70,6 @@ class BaseValidate extends Validate
         }else{
             return true;
         }
-    }
-
-    /**
-     * 根据验证器规则，过滤非法参数传递
-     * @param $arrays
-     * @return array
-     * @throws ParameterException
-     */
-    public function getDataByRule($arrays){
-        if (array_key_exists('user_id',$arrays)){
-            throw new ParameterException([
-                'msg'=>'参数中含有非法参数user_id',
-            ]);
-        }
-        $newArray = [];
-        foreach ($this->rule as $key =>$value){
-            $newArray[$key]=$arrays[$key];
-        }
-        return $newArray;
     }
 
 }

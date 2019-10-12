@@ -2,7 +2,7 @@
 /**
  * Created by PhpStorm.
  * name: token验证器
- * User: xgguo1
+ * UserInfo: xgguo1
  * Date: 2018/11/8
  * Time: 0:38
  */

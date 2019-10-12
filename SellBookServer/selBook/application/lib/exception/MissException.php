@@ -1,10 +1,9 @@
 <?php
 /**
  * Created by PhpStorm.
- * name: 请求资源为空异常类
  * User: xgguo1
- * Date: 2018/11/16
- * Time: 21:26
+ * Date: 2018/11/25
+ * Time: 22:11
  */
 
 namespace app\lib\exception;
@@ -13,6 +12,7 @@ namespace app\lib\exception;
 class MissException extends BaseException
 {
     public $code = 404;
-    public $msg = '请求资源没找到！';
+    public $msg = '请求资源不存在！';
     public $errorCode = 404;
+
 }

@@ -2,7 +2,7 @@
 /**
  * Created by PhpStorm.
  * name: 处理复杂的业务逻辑类
- * User: xgguo1
+ * UserInfo: xgguo1
  * Date: 2018/11/8
  * Time: 1:11
  */
@@ -52,7 +52,7 @@ class UserToken extends Token
                 $this->processLoginError($wxResult);
             }else{//成功拿到openID
                 $token = $this->grantToken($wxResult);
-                return $token;//返回令牌
+                return $token;
             }
 
         }
@@ -108,10 +108,10 @@ class UserToken extends Token
 
         $user = UserInfoModel::create([//插入数据库函数
             'open_id'=>$openid,
-            'username'=>$nickName,
-            'avatarUrl'=>$avatarUrl
+            'user_name'=>$nickName,
+            'avatar_url'=>$avatarUrl
         ]);
-        return $user->user_id;//取出user_info表主键user_id返回
+        return $user->user_id;
     }
 
     /**

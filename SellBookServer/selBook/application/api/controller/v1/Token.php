@@ -2,12 +2,13 @@
 /**
  * Created by PhpStorm.
  * name: 获取令牌token控制器
- * User: xgguo1
+ * UserInfo: xgguo1
  * Date: 2018/11/8
  * Time: 0:35
  */
 
 namespace app\api\controller\v1;
+
 
 use app\api\service\UserToken;
 use app\api\validate\TokenGet;
@@ -23,7 +24,14 @@ class Token
         ];
     }
 
-    public function getUser(){
-        return "sucess";
+    public function isValidate(){
+        $res = \app\api\service\Token::validateToken();
+        if ($res){
+            return [
+                'code'=>200,
+                'msg'=>'ok'
+            ];
+        }
     }
+
 }

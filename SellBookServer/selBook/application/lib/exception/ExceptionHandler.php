@@ -1,8 +1,8 @@
 <?php
 /**
  * Created by PhpStorm.
- * name: 自定义异常类处理 需在配置文件中配置
- * User: xgguo1
+ * name: 自定义异常类处理
+ * UserInfo: xgguo1
  * Date: 2018/11/8
  * Time: 20:10
  */

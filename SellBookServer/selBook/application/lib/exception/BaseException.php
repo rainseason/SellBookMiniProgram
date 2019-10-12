@@ -2,7 +2,7 @@
 /**
  * Created by PhpStorm.
  * name: 自定义异常类基类
- * User: xgguo1
+ * UserInfo: xgguo1
  * Date: 2018/11/8
  * Time: 12:26
  */

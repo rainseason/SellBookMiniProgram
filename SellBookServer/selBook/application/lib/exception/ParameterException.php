@@ -2,7 +2,7 @@
 /**
  * Created by PhpStorm.
  * name: 通用参数异常类
- * User: xgguo1
+ * UserInfo: xgguo1
  * Date: 2018/11/8
  * Time: 19:38
  */

@@ -2,7 +2,7 @@
 /**
  * Created by PhpStorm.
  * name: 微信相关配置文件
- * User: xgguo1
+ * UserInfo: xgguo1
  * Date: 2018/11/8
  * Time: 11:36
  */

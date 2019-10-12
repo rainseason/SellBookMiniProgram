@@ -2,7 +2,7 @@
 /**
  * Created by PhpStorm.
  * 令牌逻辑处理基类
- * User: xgguo1
+ * UserInfo: xgguo1
  * Date: 2018/11/9
  * Time: 22:26
  */
@@ -28,30 +28,42 @@ class Token
         $timestamp = $_SERVER['REQUEST_TIME'];
         //salt 盐加密 从配置文件读取
         $salt = config('secure.token_salt');
+
         return md5($randChars.$timestamp.$salt);
     }
 
-    public static function getCurrentUid(){
-        $uid = self::getCurrentTokenVar('uid');
-        return $uid;
-    }
-
-    public static function getCurrentTokenVar($key){
-        $token = Request::instance()->header('token');
-        $vars = Cache::get($token);
-        if (!$vars){
+    public static function validateToken(){
+        $request = Request::instance();
+        $token = $request->param()['token'];
+        $res = Cache::get($token);
+        if (!$res){
             throw new TokenException();
         }else{
-            if (!is_array($vars)){
-                $vars = json_decode($vars,true);
-            }
-            if (array_key_exists($key,$vars)){
-                return $vars[$key];
-            }else{
-                throw new Exception('根据token获取变量值失败！');
-            }
-            return $vars[$key];
+            return true;
         }
     }
 
+    public static function getUidByToken(){
+        $uid = self::getUserInfoByVar('uid');
+        return $uid;
+    }
+
+    public static function getUserInfoByVar($key){
+        $request = Request::instance();
+        $token = $request->header('token');//从头部获取token
+        $res = Cache::get($token);
+        if (!$res){//获取失败
+            throw new TokenException();
+        }else{
+            if (!is_array($res)){
+                $res = json_decode($res,true);
+            }
+            if (array_key_exists($key,$res)){
+                return $res[$key];
+            }else{
+                throw new Exception("根据token获取的变量不存在！");
+            }
+        }
+
+    }
 }

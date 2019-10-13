@@ -8,7 +8,7 @@
 
 前端：微信小程序
 
-后端：Python、ThinkPHP5
+后端：ThinkPHP5、Python（爬虫脚本：FlaskScse.py）
 
 数据库E-R图（这里只画出主要的实体和属性）：
 
@@ -81,6 +81,7 @@
 <div style="display:bolck;" align = "center">
 <img src="https://gitee.com/xgguo2/SellBookMiniProgram/raw/master/README-IMG/3rd-session.png">
 </div>
+
 
 ```javascript
 // pages/puslish/publish.js
@@ -285,5 +286,5 @@ Page({
 2. 我的码云：[https://gitee.com/xgguo2](https://gitee.com/xgguo2)
 3. 我的微信公众号：
 <div style="display:bolck;" align = "center">
-<img src="https://gitee.com/xgguo2/SellBookMiniProgram/raw/master/README-IMG/qrcode_for_gh_85b4e890d98b_258.png" width="320px" height="320px">
+<img src="https://gitee.com/xgguo2/SellBookMiniProgram/raw/master/README-IMG/qrcode_for_gh_85b4e890d98b_258.jpg" width="320px" height="320px">
 </div>
